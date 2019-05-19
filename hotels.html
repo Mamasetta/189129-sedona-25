@@ -44,9 +44,77 @@
       <h1 class="visually-hidden">Выбор гостинницы в Седоне</h1>
 
       <section class="filter">
-        <form action="">
-          <fieldset></fieldset>
+
+        <h2 class="visually-hidden">Параметры поиска гостиницы в Седоне</h2>
+
+        <form action="" method="">
+
+          <fieldset class="filter__form filter-form">
+
+            <legend class="visually-hidden">Выбор параметров для поиска</legend>
+
+            <p class="filter-form__section">
+
+              <b class="filter-form__title">Инфраструктура:</b>
+
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox" type="checkbox" name="pool">
+                Бассейн
+              </label>
+
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox" type="checkbox" name="parking">
+                Парковка
+              </label>
+
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox" type="checkbox" name="wifi">
+                Wi-Fi
+              </label>
+
+            </p>
+
+            <p class="filter-form__section">
+
+              <b class="filter-form__title">Тип жилья:</b>
+
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox" type="checkbox" name="hotel">
+                Гостиница
+              </label>
+
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox" type="checkbox" name="motel">
+                Мотель
+              </label>
+
+              <label class="filter-form__label">
+                <input class="filter-form__checkbox" type="checkbox" name="apartments">
+                Апартаменты
+              </label>
+
+            </p>
+
+            <p class="filter-form__section range-filter">
+
+              <b class="filter-form__title">Стоимость в сутки (Р):</b>
+
+              <p class="range-filter__value">от <span>0</span></p>
+              <p class="range-filter__value">до <span>3000</span></p>
+
+              <div class="range-filter__toggles">
+                <div class="range-filter__toggle range-filter__toggle--min"></div>
+                <div class="range-filter__toggle range-filter__toggle--max"></div>
+              </div>
+
+            </p>
+
+            <button class="filter-form__button" type="submit" value="show">Показать</button>
+
+          </fieldset>
+
         </form>
+
       </section>
 
       <section class="sorting">

@@ -135,11 +135,47 @@
 
         <button class="search__button" type="button">Поиск гостинницы в Седоне</button>
 
-        <div class="search__popup"></div>
+        <p class="search__form search-form">
+
+          <form action="" method="">
+
+            <fieldset class="search-form__set">
+
+              <legend class="visually-hidden">Форма для поиска гостинницы в Седоне</legend>
+
+              <label class="search-form__label">
+                Дата заезда:
+                <input class="search-form__date" type="date">
+              </label>
+
+              <label class="search-form__label">
+                Дата выезда:
+                <input class="search-form__date" type="date">
+              </label>
+
+              <label class="search-form__label">
+                Взрослые:
+                <input class="search-form__number" type="number" min="0">
+              </label>
+
+              <label class="search-form__label">
+                Дети:
+                <input class="search-form__number" type="number" min="0">
+              </label>
+
+              <button class="search-form__button" type="submit" value="search">Найти</button>
+
+            </fieldset>
+
+          </form>
+
+        </p>
 
       </section>
 
-      <section class="map"></section>
+      <section class="map">
+        <img src="img/map.jpg" alt="Карта" width="1200" height="594">
+      </section>
 
     </main>
 
