@@ -47,77 +47,72 @@
 
         <h2 class="visually-hidden">Параметры поиска гостиницы в Седоне</h2>
 
-        <form action="" method="">
+        <form class="filter__form filter-form" action="https://echo.htmlacademy.ru" method="get">
 
-          <fieldset class="filter__form filter-form">
+          <fieldset class="filter-form__fieldset">
 
-            <legend class="visually-hidden">Выбор параметров для поиска</legend>
+            <legend class="filter-form__title">Инфраструктура:</legend>
 
-            <p class="filter-form__section">
+            <label class="filter-form__label">
+              <input class="filter-form__checkbox" type="checkbox" name="pool">
+              Бассейн
+            </label>
 
-              <b class="filter-form__title">Инфраструктура:</b>
+            <label class="filter-form__label">
+              <input class="filter-form__checkbox" type="checkbox" name="parking">
+              Парковка
+            </label>
 
-              <label class="filter-form__label">
-                <input class="filter-form__checkbox" type="checkbox" name="pool">
-                Бассейн
-              </label>
-
-              <label class="filter-form__label">
-                <input class="filter-form__checkbox" type="checkbox" name="parking">
-                Парковка
-              </label>
-
-              <label class="filter-form__label">
-                <input class="filter-form__checkbox" type="checkbox" name="wifi">
-                Wi-Fi
-              </label>
-
-            </p>
-
-            <p class="filter-form__section">
-
-              <b class="filter-form__title">Тип жилья:</b>
-
-              <label class="filter-form__label">
-                <input class="filter-form__checkbox" type="checkbox" name="hotel">
-                Гостиница
-              </label>
-
-              <label class="filter-form__label">
-                <input class="filter-form__checkbox" type="checkbox" name="motel">
-                Мотель
-              </label>
-
-              <label class="filter-form__label">
-                <input class="filter-form__checkbox" type="checkbox" name="apartments">
-                Апартаменты
-              </label>
-
-            </p>
-
-            <p class="filter-form__section range-filter">
-
-              <b class="filter-form__title">Стоимость в сутки (Р):</b>
-
-              <p class="range-filter__value">от <span>0</span></p>
-              <p class="range-filter__value">до <span>3000</span></p>
-
-              <div class="range-filter__toggles">
-                <div class="range-filter__toggle range-filter__toggle--min"></div>
-                <div class="range-filter__toggle range-filter__toggle--max"></div>
-              </div>
-
-            </p>
-
-            <button class="filter-form__button" type="submit" value="show">Показать</button>
+            <label class="filter-form__label">
+              <input class="filter-form__checkbox" type="checkbox" name="wifi">
+              Wi-Fi
+            </label>
 
           </fieldset>
+
+          <fieldset>
+
+            <legend class="filter-form__title">Тип жилья:</legend>
+
+            <label class="filter-form__label">
+              <input class="filter-form__checkbox" type="checkbox" name="hotel">
+              Гостиница
+            </label>
+
+            <label class="filter-form__label">
+              <input class="filter-form__checkbox" type="checkbox" name="motel">
+              Мотель
+            </label>
+
+            <label class="filter-form__label">
+              <input class="filter-form__checkbox" type="checkbox" name="apartments">
+              Апартаменты
+            </label>
+
+          </fieldset>
+
+          <div class="filter-form__section range-filter">
+
+            <b class="filter-form__title">Стоимость в сутки (Р):</b>
+
+            <p class="range-filter__value">от <span>0</span></p>
+            <p class="range-filter__value">до <span>3000</span></p>
+
+            <div class="range-filter__toggles">
+              <div class="range-filter__toggle range-filter__toggle--min"></div>
+              <div class="range-filter__toggle range-filter__toggle--max"></div>
+            </div>
+
+          </div>
+
+          <button class="filter-form__button" type="submit">Показать</button>
 
         </form>
 
       </section>
 
       <section class="sorting">
+
         <p class="sorting__title">НАЙДЕНО: <span>3</span></p>
 
         <h2 class="sorting__list-title">Сортировка:</h2>

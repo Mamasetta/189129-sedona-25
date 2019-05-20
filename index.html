@@ -137,7 +137,7 @@
 
         <p class="search__form search-form">
 
-          <form action="" method="">
+          <form action="https://echo.htmlacademy.ru" method="post">
 
             <fieldset class="search-form__set">
 
@@ -145,27 +145,33 @@
 
               <label class="search-form__label">
                 Дата заезда:
-                <input class="search-form__date" type="date">
+                <input class="search-form__date" type="text" placeholder="24 апреля 2017">
+                <button class="search-form__calendar" type="button">Календарь</button>
               </label>
 
               <label class="search-form__label">
                 Дата выезда:
-                <input class="search-form__date" type="date">
+                <input class="search-form__date" type="text" placeholder="4 июля 2017">
+                <button class="search-form__calendar" type="button">Календарь</button>
               </label>
 
               <label class="search-form__label">
                 Взрослые:
-                <input class="search-form__number" type="number" min="0">
+                <button class="search-form__control search-form__control--decrease" type="button">Уменьшение значения</button>
+                <input class="search-form__number" type="text" placeholder="2">
+                <button class="search-form__control search-form__control--increase" type="button">Увеличение значения</button>
               </label>
 
               <label class="search-form__label">
                 Дети:
-                <input class="search-form__number" type="number" min="0">
+                <button class="search-form__control search-form__control--decrease" type="button">Уменьшение значения</button>
+                <input class="search-form__number" type="text" placeholder="0">
+                <button class="search-form__control search-form__control--increase" type="button">Увеличение значения</button>
               </label>
 
-              <button class="search-form__button" type="submit" value="search">Найти</button>
-
             </fieldset>
+
+            <button class="search-form__button" type="submit">Найти</button>
 
           </form>
 
@@ -174,7 +180,7 @@
       </section>
 
       <section class="map">
-        <img src="img/map.jpg" alt="Карта" width="1200" height="594">
+        <img src="img/map.jpg" alt="Мы находимся по адресу - Аризона 86336, США" width="1200" height="594">
       </section>
 
     </main>
