@@ -135,47 +135,43 @@
 
         <button class="search__button" type="button">Поиск гостинницы в Седоне</button>
 
-        <p class="search__form search-form">
+        <form class="search__form search-form" action="https://echo.htmlacademy.ru" method="post">
 
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="search-form__set">
 
-            <fieldset class="search-form__set">
+            <legend class="visually-hidden">Форма для поиска гостинницы в Седоне</legend>
 
-              <legend class="visually-hidden">Форма для поиска гостинницы в Седоне</legend>
+            <label class="search-form__label">
+              Дата заезда:
+              <input class="search-form__date" type="text" placeholder="24 апреля 2017">
+              <button class="search-form__calendar" type="button">Календарь</button>
+            </label>
 
-              <label class="search-form__label">
-                Дата заезда:
-                <input class="search-form__date" type="text" placeholder="24 апреля 2017">
-                <button class="search-form__calendar" type="button">Календарь</button>
-              </label>
+            <label class="search-form__label">
+              Дата выезда:
+              <input class="search-form__date" type="text" placeholder="4 июля 2017">
+              <button class="search-form__calendar" type="button">Календарь</button>
+            </label>
 
-              <label class="search-form__label">
-                Дата выезда:
-                <input class="search-form__date" type="text" placeholder="4 июля 2017">
-                <button class="search-form__calendar" type="button">Календарь</button>
-              </label>
+            <label class="search-form__label">
+              Взрослые:
+              <button class="search-form__control search-form__control--decrease" type="button">Уменьшение значения</button>
+              <input class="search-form__number" type="text" placeholder="2">
+              <button class="search-form__control search-form__control--increase" type="button">Увеличение значения</button>
+            </label>
 
-              <label class="search-form__label">
-                Взрослые:
-                <button class="search-form__control search-form__control--decrease" type="button">Уменьшение значения</button>
-                <input class="search-form__number" type="text" placeholder="2">
-                <button class="search-form__control search-form__control--increase" type="button">Увеличение значения</button>
-              </label>
+            <label class="search-form__label">
+              Дети:
+              <button class="search-form__control search-form__control--decrease" type="button">Уменьшение значения</button>
+              <input class="search-form__number" type="text" placeholder="0">
+              <button class="search-form__control search-form__control--increase" type="button">Увеличение значения</button>
+            </label>
 
-              <label class="search-form__label">
-                Дети:
-                <button class="search-form__control search-form__control--decrease" type="button">Уменьшение значения</button>
-                <input class="search-form__number" type="text" placeholder="0">
-                <button class="search-form__control search-form__control--increase" type="button">Увеличение значения</button>
-              </label>
+          </fieldset>
 
-            </fieldset>
+          <button class="search-form__button" type="submit">Найти</button>
 
-            <button class="search-form__button" type="submit">Найти</button>
-
-          </form>
-
-        </p>
+        </form>
 
       </section>
 
