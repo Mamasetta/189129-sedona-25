@@ -17,7 +17,16 @@ a {
 }
 
 .visually-hidden {
-
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
 }
 
 /* header */
@@ -54,6 +63,16 @@ a {
 
 /* index */
 
+.intro {
+  width: 100%;
+  height: 508px;
+
+  background-image: url('../img/intro-welcome.svg'), url('../img/polygon.svg'), url('../img/background_intro.jpg');
+  background-size: 459px, contain, cover;
+  background-position: 50% 76px,left 0 bottom 0, 0 0;
+  background-repeat: no-repeat;
+}
+
 .introduce__title {
   font-size: 21px;
   font-weight: 700;
@@ -84,15 +103,12 @@ a {
   color: #000;
 }
 
-.reasons-item__title--item-big {
-  color: #fff;
-}
-
 .reasons-item__text {
   line-height: 21px;
 }
 
-.reasons-item__text--item-big{
+.reasons-item__title--item-big,
+.reasons-item__text--item-big {
   color: #fff;
 }
 
@@ -157,6 +173,11 @@ a {
 .search-form__number:focus {
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
+}
+
+.search-form__date::placeholder,
+.search-form__number::placeholder {
+  color: #000;
 }
 
 .search-form__calendar,
@@ -226,6 +247,7 @@ a {
 
   background-color: rgba(129, 179, 210, 0);
   border: solid 2px #fff;
+  border-radius: 2px;
 }
 
 .filter-form__button:hover,
