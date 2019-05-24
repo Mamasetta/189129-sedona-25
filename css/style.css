@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+
+}
+
+/* header */
+
+.header__navigation {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+
+  background-color: #fff;
+}
+
+.header__list {
+  list-style: none;
+}
+
+.header__list-link {
+  color: #000;
+}
+
+.header__list-link:hover,
+.header__list-link:focus {
+  color: #81b3d2;
+}
+
+.header__list-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header__list-link--active {
+  color: #766357;
+}
+
+/* index */
+
+.introduce__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000;
+}
+
+.introduce__description {
+  line-height: 26px;
+}
+
+.reasons__list {
+  list-style: none;
+}
+
+.reasons__item--big {
+  background-color: #81b3d2;
+}
+
+.reasons__item--colored {
+  background-color: #eee;
+}
+
+.reasons-item__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000;
+}
+
+.reasons-item__title--item-big {
+  color: #fff;
+}
+
+.reasons-item__text {
+  line-height: 21px;
+}
+
+.reasons-item__text--item-big{
+  color: #fff;
+}
+
+.search__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000;
+}
+
+.search__text {
+  line-height: 24px;
+}
+
+.search__button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+
+  background-color: #766357;
+  border: none;
+}
+
+.search__button:hover,
+.search__button:focus {
+  background-color: #604e43;
+}
+
+.search__button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.search-form__label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #000;
+}
+
+.search-form__date,
+.search-form__number {
+  font: inherit;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-form__date:hover,
+.search-form__number:hover {
+  background-color: #ebebeb;
+}
+
+.search-form__date:focus,
+.search-form__number:focus {
+  background-color: #ffffff;
+  border: solid 2px #e5e5e5;
+}
+
+.search-form__calendar,
+.search-form__control {
+  font: inherit;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-form__button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search-form__button:hover,
+.search-form__button:focus {
+  background-color: #669ec0;
+}
+
+.search-form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+/* hotels */
+
+.filter {
+  color: #fff;
+
+  background-color: #81b3d2;
+  background-image: url('../img/bg_filter.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.filter-form__fieldset {
+  text-align: left;
+}
+
+.filter-form__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+}
+
+.filter-form__label {
+  text-align: left;
+}
+
+.filter-form__button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #fff;
+
+  background-color: rgba(129, 179, 210, 0);
+  border: solid 2px #fff;
+}
+
+.filter-form__button:hover,
+.filter-form__button:focus {
+  color: #000;
+
+  background-color: #fff;
+}
+
+.sorting__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #000;
+}
+
+.sorting__list-title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #000;
+}
+
+.sorting__list {
+  list-style: none;
+  text-align: left;
+}
+
+.sorting__list-item {
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting__list-item:active,
+.sorting__list-item--active {
+  border-bottom: none;
+}
+
+.sorting__list-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting__list-link:hover,
+.sorting__list-link:focus {
+  color: #81b3d2;
+}
+
+.sorting__list-link:active {
+  color: #000;
+}
+
+.sorting__list-link--active {
+  color: #81b3d2;
+}
+
+.arrow {
+  list-style: none;
+}
+
+.catalog {
+  text-align: left;
+}
+
+.catalog__list {
+  list-style: none;
+}
+
+.catalog-item__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #000;
+}
+
+.catalog-item__title-link {
+  color: #000;
+}
+
+.catalog-item__title-link:hover,
+.catalog-item__title-link:focus {
+  color: #81b3d2;
+}
+
+.catalog-item__title-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item__description {
+  text-align: left;
+}
+
+.catalog-item__link {
+  font-weight: 700;
+  color: #fff;
+}
+
+.catalog-item__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-item__link--more {
+  background-color: #81b3d2;
+}
+
+.catalog-item__link--more:hover,
+.catalog-item__link--more:focus {
+  background-color: #669ec0;
+}
+
+.catalog-item__link--more:active {
+  background-color: #5496bd;
+}
+
+.catalog-item__link--reserve {
+  background-color: #766357;
+}
+
+.catalog-item__link--reserve:hover,
+.catalog-item__link--reserve:focus {
+  background-color: #604e43;
+}
+
+.catalog-item__link--reserve:active {
+  background-color: #503e33;
+}
+
+.rating__list {
+  list-style: none;
+  text-align: right;
+}
+
+.rating__value {
+  text-align: center;
+  color: #666;
+
+  background-color: #f2f2f2;
+}
+
+/* footer */
+
+.footer__hashtag {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-list__link {
+  font-weight: 700;
+  color: #fff;
+
+  background-color: #81b3d2;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: #669ec0;
+}
+
+.social-list__link:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.footer__copyright {
+  line-height: 26px;
+  color: #000;
+}
+
+.footer__copyright-link {
+  color: #231f20;
+}
+
+.footer__copyright-link:hover,
+.footer__copyright-link:focus {
+  color: #81b3d2;
+}
+
+.footer__copyright-link:active {
+  color: #bdbbbc;
+}
