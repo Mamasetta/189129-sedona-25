@@ -51,9 +51,9 @@ input[type='radio'].visually-hidden {
 /* header */
 
 .header__navigation {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 26px;
   color: #000;
 
   background-color: #fff;
@@ -72,8 +72,8 @@ input[type='radio'].visually-hidden {
   display: block;
   width: 239px;
   margin: 0;
-  padding-top: 17px;
-  padding-bottom: 19px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 
   color: #000;
 }
@@ -282,7 +282,7 @@ input[type='radio'].visually-hidden {
   padding: 55px;
 
   background-color: #fff;
-  box-shadow: box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .search-form__set {
@@ -311,7 +311,7 @@ input[type='radio'].visually-hidden {
 }
 
 .search-form__label--number {
-  width: 227px;
+  /* width: 229px; */
 }
 
 .search-form__date,
@@ -333,12 +333,25 @@ input[type='radio'].visually-hidden {
   padding-right: 30px;
 }
 
+.search-form__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .search-form__number {
   width: 114px;
   padding-left: 38px;
   padding-right: 38px;
 
   text-align: center;
+}
+
+.search-form__number--adult {
+  margin-left: 41px;
+}
+
+.search-form__number--child {
+  margin-left: 27px;
 }
 
 .search-form__date:hover,
@@ -349,7 +362,7 @@ input[type='radio'].visually-hidden {
 .search-form__date:focus,
 .search-form__number:focus {
   padding: 4px 11px;
-  
+
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
   outline: none;
@@ -423,7 +436,7 @@ input[type='radio'].visually-hidden {
   position: absolute;
   width: 12px;
   height: 3px;
-  top: 17px;
+  top: 19px;
   left: 13px;
 
   background-color: #a9a9a9;
@@ -450,8 +463,8 @@ input[type='radio'].visually-hidden {
 
 .search-form__button {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 16px;
 
   font-size: 21px;
   font-weight: 700;
@@ -757,7 +770,7 @@ input[type='radio'].visually-hidden {
 .social-list__link {
   display: block;
   position: relative;
-  width: 48px;
+  width: 46px;
   height: 48px;
 
   font-weight: 700;
