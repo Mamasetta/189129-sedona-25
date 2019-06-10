@@ -505,18 +505,34 @@ input[type='radio'].visually-hidden {
 .filter__form {
   display: flex;
   justify-content: space-between;
-  padding: 30px 72px;
+  padding-top: 27px;
+  padding-bottom: 8px;
+  padding-left: 70px;
+  padding-right: 72px;
 }
 
 .filter-form__wrapper {
   display: flex;
 }
 
+.filter-form__wrapper--column {
+  flex-direction: column;
+}
+
 .filter-form__fieldset {
+  margin: 0;
+  margin-right: 115px;
+  padding: 0;
+
   text-align: left;
+  vertical-align: middle;
+
+  border: none;
 }
 
 .filter-form__title {
+  margin-bottom: 20px;
+
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -524,10 +540,40 @@ input[type='radio'].visually-hidden {
 }
 
 .filter-form__label {
+  position: relative;
+  display: block;
+  margin-bottom: 23px;
+  padding-top: 3px;
+  padding-left: 41px;
+
   text-align: left;
 }
 
+.filter-form__checkbox + .filter-form__label::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 23px;
+  height: 23px;
+
+  background-image: url('../img/checkbox-off.svg');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.filter-form__checkbox:checked + .filter-form__label::before {
+  width: 26px;
+  height: 23px;
+
+  background-image: url('../img/checkbox-on.svg');
+}
+
 .filter-form__button {
+  align-self: center;
+  padding: 6px 34px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -545,6 +591,95 @@ input[type='radio'].visually-hidden {
   background-color: #fff;
 }
 
+.range-filter__price {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  width: 318px;
+  height: 36px;
+  margin-bottom: 20px;
+
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.range-filter__price::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  top: 50%;
+  right: 50%;
+  margin-top: -11px;
+  margin-right: -1px;
+
+  background: #fff;
+}
+
+.range-filter__title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.range-filter__value {
+  width: 90px;
+  padding-top: 5px;
+  padding-left: 57px;
+}
+
+.range-filter__data {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-filter__toggles {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-filter__scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-filter__bar {
+  width: 80%;
+  height: 2px;
+
+  background: #fff;
+}
+
+.range-filter__toggle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: -9px;
+
+  background: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+}
+
+.range-filter__toggle--min {
+  left: 0;
+}
+
+.range-filter__toggle--max {
+  left: 80%;
+}
+
+.range-filter__toggle:hover {
+  top: -11px;
+  border: 10px solid #fff;
+}
+
 .sorting {
   display: flex;
   padding: 30px 72px;
@@ -552,7 +687,7 @@ input[type='radio'].visually-hidden {
 
 .sorting__title {
   margin: 0;
-  margin-right: 50px;
+  margin-right: 47px;
   padding: 0;
 
   font-size: 21px;
@@ -564,7 +699,9 @@ input[type='radio'].visually-hidden {
 
 .sorting__list-title {
   margin: 0;
+  margin-right: 25px;
   padding: 0;
+  padding-top: 6px;
 
   font-size: 12px;
   font-weight: 400;
@@ -575,28 +712,31 @@ input[type='radio'].visually-hidden {
 
 .sorting__list {
   list-style: none;
-  text-align: left;
 
   display: flex;
   margin: 0;
   padding: 0;
+
+  text-align: left;
 }
 
 .sorting__list-item {
-  border-bottom: 1px dashed #81b3d2;
-}
-
-.sorting__list-item:active,
-.sorting__list-item--active {
-  border-bottom: none;
+  padding-top: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .sorting__list-link {
+  display: inline-block;
+  vertical-align: baseline;
+
   font-size: 12px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 15px;
   text-align: left;
   color: rgba(0, 0, 0, 0.3);
+
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting__list-link:hover,
@@ -606,10 +746,12 @@ input[type='radio'].visually-hidden {
 
 .sorting__list-link:active {
   color: #000;
+  border-bottom: none;
 }
 
 .sorting__list-link--active {
   color: #81b3d2;
+  border-bottom: none;
 }
 
 .arrow {
@@ -618,6 +760,32 @@ input[type='radio'].visually-hidden {
   margin: 0;
   margin-left: auto;
   padding: 0;
+}
+
+.arrow__item {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 9px;
+}
+
+.arrow__link {
+  display: block;
+  width: 11px;
+  height: 15px;
+}
+
+.arrow__link path {
+  fill: #cacaca;
+}
+
+.arrow__link:hover path,
+.arrow__link:focus path {
+  fill: #231F20;
+}
+
+.arrow__link:active path,
+.arrow__link--active {
+  fill: #81b3d2;
 }
 
 .catalog {
@@ -635,7 +803,16 @@ input[type='radio'].visually-hidden {
   display: flex;
 
   margin: 0;
-  padding: 30px 70px;
+  padding-top: 30px;
+  padding-bottom: 29px;
+  padding-left: 72px;
+  padding-right: 72px;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.catalog-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-item img {
@@ -645,6 +822,9 @@ input[type='radio'].visually-hidden {
 }
 
 .catalog-item__title {
+  margin: 0;
+  padding: 0;
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -665,11 +845,29 @@ input[type='radio'].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.catalog-item__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 182px;
+  margin-bottom: 13px;
+  padding-top: 2px;
+}
+
 .catalog-item__description {
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+
   text-align: left;
 }
 
 .catalog-item__link {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2px;
+  padding: 4px 17px;
+
   font-weight: 700;
   color: #fff;
 }
@@ -705,15 +903,43 @@ input[type='radio'].visually-hidden {
 }
 
 .rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: auto;
 }
 
 .rating__list {
+  display: flex;
+  justify-content: flex-end;
+  width: 120px;
   list-style: none;
   text-align: right;
 }
 
+.rating__star {
+  width: 18px;
+  height: 16px;
+  margin-left: 6px;
+
+  background-image: url('../img/star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.rating__star--hidden {
+  display: none;
+}
+
 .rating__value {
+  align-self: flex-end;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 13px;
+
   text-align: center;
   color: #666;
 
@@ -829,6 +1055,7 @@ input[type='radio'].visually-hidden {
 
 .footer__copyright-text {
   display: inline-block;
+  vertical-align: baseline;
   padding: 0;
   padding-top: 5px;
   padding-right: 4px;
