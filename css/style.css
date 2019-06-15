@@ -22,6 +22,36 @@ img {
   height: auto;
 }
 
+@keyframes error {
+  0%,
+  50%,
+  100% {
+    background-color: #f2f2f2;
+  }
+
+  25%,
+  75% {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+}
+
+@keyframes downShow {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
@@ -50,6 +80,14 @@ input[type='radio'].visually-hidden {
 
 .hidden {
   display: none;
+}
+
+.opening {
+  animation: downShow 0.6s;
+}
+
+.error {
+  animation: error 0.5s;
 }
 
 /* header */
@@ -257,6 +295,8 @@ input[type='radio'].visually-hidden {
 }
 
 .search__button {
+  position: relative;
+  z-index: 4;
   padding: 30px 132px;
 
   font-size: 21px;
