@@ -92,6 +92,25 @@ input[type='radio'].visually-hidden {
 
 /* header */
 
+.header {
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 244px;
+  height: 56px;
+  margin: 0;
+  margin-left: -122px;
+  padding: 0;
+}
+
+.header-logo__link {
+  display: block;
+}
+
 .header__navigation {
   font-size: 14px;
   font-weight: 700;
@@ -110,13 +129,37 @@ input[type='radio'].visually-hidden {
   padding: 0;
 }
 
-.header__list-link {
-  display: block;
-  width: 239px;
+.header__list-item {
+  width: 167px;
   margin: 0;
   padding-top: 14px;
   padding-bottom: 16px;
+  padding-left: 73px;
 
+  text-align: left;
+}
+
+.header__list-item:nth-child(2) {
+  margin-right: 119px;
+}
+
+.header__list-item:nth-child(3) {
+  margin-left: 118px;
+  padding-left: 0;
+  padding-right: 75px;
+
+  text-align: right;
+}
+
+.header__list-item:nth-child(4) {
+  padding-left: 0;
+  padding-right: 73px;
+  text-align: right;
+}
+
+
+
+.header__list-link {
   color: #000;
 }
 
@@ -133,17 +176,13 @@ input[type='radio'].visually-hidden {
   color: #766357;
 }
 
-.header__list-item--logo {
-  width: 244px;
-  height: 56px;
-}
-
 /* index */
 
 .intro {
   width: 100%;
   height: 508px;
 
+  background-color: #eee;
   background-image: url('../img/intro-welcome.svg'), url('../img/polygon.svg'), url('../img/background_intro.jpg');
   background-size: 459px, contain, cover;
   background-position: 50% 76px,left 0 bottom 0, 0 -57px;
@@ -203,6 +242,23 @@ input[type='radio'].visually-hidden {
   padding-bottom: 61px;
 }
 
+.reasons__item--picture:nth-child(3) {
+  width: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.reasons__item--big-second .reasons__wrapper {
+  width: 320px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.reasons__item--big-second .reasons-item__title {
+  padding-left: 25px;
+  padding-right: 24px;
+}
+
 .reasons__item--picture::before {
   content: '';
 
@@ -234,6 +290,12 @@ input[type='radio'].visually-hidden {
   background-color: #eee;
 }
 
+.reasons__item--colored:last-child {
+  width: 250px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
 .reasons-item__title {
   margin-top: 7px;
   margin-bottom: 24px;
@@ -260,6 +322,7 @@ input[type='radio'].visually-hidden {
   width: 800px;
   height: 256px;
 
+  background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -423,7 +486,7 @@ input[type='radio'].visually-hidden {
   text-transform: uppercase;
   color: #000;
 
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 0);
   border: none;
 }
 
@@ -433,6 +496,9 @@ input[type='radio'].visually-hidden {
   right: 9px;
   top: 8px;
   padding: 0;
+
+  outline: none;
+  border: none;
 }
 
 .search-form__calendar:focus {
@@ -458,8 +524,6 @@ input[type='radio'].visually-hidden {
   top: 0;
 
   outline: none;
-  border: none;
-  background-color: rgba(242, 242, 242, 0);
 }
 
 .search-form__control--decrease {
@@ -635,6 +699,7 @@ input[type='radio'].visually-hidden {
 .filter-form__button {
   align-self: center;
   padding: 6px 34px;
+  margin-right: 10px;
 
   font-size: 14px;
   font-weight: 400;
