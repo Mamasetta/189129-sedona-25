@@ -402,13 +402,15 @@ input[type='radio'].visually-hidden {
   border: none;
 }
 
-.search-form__label {
+.search-form__input-wrapper {
   display: inline-flex;
   justify-content: space-between;
   position: relative;
   align-items: center;
   margin-bottom: 29px;
+}
 
+.search-form__label {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -421,7 +423,8 @@ input[type='radio'].visually-hidden {
   box-sizing: border-box;
   padding: 6px 13px;
 
-  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: #000;
