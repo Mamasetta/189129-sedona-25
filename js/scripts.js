@@ -3,12 +3,12 @@ var searchForm = document.querySelector(".search__form");
 var searchDateIn = document.querySelector(".search-form__date--in");
 var searchDateOut = document.querySelector(".search-form__date--out");
 
-searchForm.classList.add('hidden');
+searchForm.classList.add("hidden");
 
 searchButton.addEventListener("click", function(event) {
   event.preventDefault();
-  searchForm.classList.toggle('hidden');
-  searchForm.classList.toggle('opening');
+  searchForm.classList.toggle("hidden");
+  searchForm.classList.toggle("opening");
 });
 
 searchForm.addEventListener("submit", function (event) {
